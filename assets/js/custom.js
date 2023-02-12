@@ -214,7 +214,7 @@ function loadFrndList() {
                                             </div>
                                             <div class="col-md-10">
                                                 <div class="user-name">${usrInf.name}</div>
-                                                <div class="user-text">Hello world this is my chat App...</div>
+                                                <div class="user-text">Library Of Liberty | LOL</div>
                                             </div>
                                         </div>
                                     </li>`;
