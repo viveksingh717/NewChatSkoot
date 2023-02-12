@@ -128,12 +128,12 @@
                             <div class="col-2 col-md-1 text-secondary fs-5">
                                 <i class="fa-regular fa-face-smile" onclick="openSmily()"></i>
                             </div>
-                            <div class="col-8 col-md-10">
+                            <div class="col-8 col-md-10 p-3">
                                 <input type="text" class="form-control rounded-pill" id="textMsg" onkeyup="changeSendIcon(this)" onfocus="hideSmilyPanel()"  placeholder="Type here.." required>
                             </div>
                             <div class="col-2 col-md-1 text-secondary fs-5" style="cursor: pointer;">
                                 <i class="fa fa-microphone" id="audioMic" onclick="recordStart(this)"></i>
-                                <i class="fa fa-paper-plane" id="send" style="display: none;"></i>
+                                <i class="fa fa-paper-plane" id="send" onclick="mobileSendBtn()" style="display: none;"></i>
                             </div>
                         </div>
                     </div>

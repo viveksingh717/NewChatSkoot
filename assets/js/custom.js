@@ -8,6 +8,14 @@ document.addEventListener('keydown', function(key){
     }
 });
 
+// document.addEventListener('click', mobileSendBtn);
+
+
+function mobileSendBtn(){
+    sendTextMsg();
+    // alert('gtr');
+}
+
 function loadMessage(chatKey, frndPhoto){
     var db = firebase.database().ref('chatMessage').child(chatKey);
     db.on('value', function(chats){
@@ -132,7 +140,7 @@ function sendTextMsg(){
                             </div>
                             <div class="col-6 col-sm-6 col-md-6">
                                 <p class="border bg-gradient recieveMsg">${textMsg}
-                                    <span class="chatTime float-end mt-3">1:20 PM</span></p>
+                                    <span class="chatTime float-end mt-3">${timestamp}</span></p>
                             </div>
                         </div>`;
 
